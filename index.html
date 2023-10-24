@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #a0a0a0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+            display: flex;
+            /* Establece el contenedor como un contenedor flex */
+            flex-wrap: wrap;
+            /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+            justify-content: center;
+            /* Centra los elementos a lo largo del eje principal horizontal */
+            align-items: center;
+            /* Centra los elementos a lo largo del eje secundario vertical */
+            background-color: #010511;
+            margin: 0 50px;
+            /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+            border-radius: 1%;
+
+        }
+
+        header {
+            display: flex;
+            /* Establece el encabezado como un contenedor flex */
+            align-items: baseline;
+            /* Alinea los elementos del encabezado a lo largo de la línea de base */
+            justify-content: space-between;
+            /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+            padding: 25px;
+        }
+
+        .container-title {
+            font-family: 'Caveat', cursive;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container-image {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .botones {
+            background-color: #010511;
+            padding: 9px;
+            border-radius: 10%;
+            text-decoration: none;
+            text-transform: uppercase;
+            
+        }
+
+        .botones:hover {
+
+            text-decoration: underline;
+            background-color: #010511;
+
+
+        }
+        .parrafo{
+            font-family: 'Bebas Neue', sans-serif;
+        }
+        .clase-a {
+            background-color: #010511;
+            padding: 9px;
+            border-radius: 10%;
+        }
+        .precios_autos {
+            font-family: 'Bebas Neue', sans-serif;
+
+        }
+
+        .box {
+            width: 350px;
+            padding: 20px;
+            background-color: #a7a8a9;
+            margin: 10px;
+            text-align: center;
+            border-radius: 5%;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+    </style>
+</head >
+
+<body>
+    <header>
+        <div class="container-image">
+            <img src="asset/Ford_logo.svg.png" height="70px" width="170px" alt="Imagen de Producto">
+            <h3 class="container-title">Mucho mas que autos</h3>
+        </div>
+        <nav>           
+            <ul>
+                <li><a class="clase-a" href="">HOME</a></li>
+                <li><a class="clase-a" href="">PRECIOS</a></li>
+                <li><a class="clase-a" href="">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div>
+            
+        </div>
+
+    </header>
+    <main class="container">
+        <div class="box">
+            <img src="asset/fordtransit.img" height="260px" width="340px" alt="">
+            <h3 class="precios_autos"> U$S 25.000</h3>
+            <p class="parrafo ">Ford transit</p>
+            <a class="botones" href="#">Enlace 1</a>
+        </div>
+        <div class="box">
+            <img src="asset/bronco" height="260px" width="340px" alt="">
+            <h3 class="precios_autos">U$S 40.000</h3>
+            <p class="parrafo ">Ford bronco</p>
+            <a class="botones" href="#">Enlace 2</a>
+        </div>
+        <div class="box">
+            <img src="asset/muggtan" height="260px" width="340px" alt="">
+            <h3 class="precios_autos">U$S 75.000</h3>
+            <p class="parrafo">Ford mustang</p>
+            <a class="botones" href="#">Enlace 3</a>
+        </div>
+        <div>
+            <img src="asset/raptors." height="740px" width="1424px">
+
+        </div>
+        <div class="box">
+            <img src="asset/f250" height="260px" width="340px" alt="">
+            <h3 class="precios_autos">U$S 78.000</h3>
+            <p class="parrafo">Ford F-250</p>
+            <a class="botones" href="#">Enlace 4</a>
+        </div>
+
+        <div class="box">
+            <img src="asset/raptor" height="260px" width="340px" alt="">
+            <h3 class="precios_autos">U$S 45.000</h3>
+            <p class="parrafo">Ford raptor</p>
+            <a class="botones" href="#">Enlace 5</a>
+
+        </div>
+        <div class="box">
+            <img src="asset/f350.jpg" height="260px" width="340px" alt="">
+            <h3 class="precios_autos"> U$S 58.000</h3>
+            <p class="parrafo">Ford F-350</p>
+            <a class="botones" href="#">Enlace 6</a>
+        </div>
+
+    </main>
+
+      
+    <footer><h3> @sastre_vicente</h3></footer>
+</body>
+
+</html>
